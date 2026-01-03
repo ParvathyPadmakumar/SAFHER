@@ -1,0 +1,181 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "SafeRoute",
+      "archetype": "The Vigilant Guardian",
+      "core_values": ["Safety", "Clarity", "Trust", "Community"],
+      "vibe": "A modern, reassuring digital companion. Not alarmist, but aware. Clean, high-contrast, and map-centric."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Outfit, sans-serif",
+        "body": "Public Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "bold": 700,
+        "black": 900
+      },
+      "usage": {
+        "h1": "text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white",
+        "h2": "text-3xl font-bold tracking-tight text-slate-900 dark:text-white",
+        "h3": "text-2xl font-semibold text-slate-800 dark:text-slate-100",
+        "body_large": "text-lg leading-relaxed text-slate-700 dark:text-slate-300",
+        "body_default": "text-base leading-relaxed text-slate-600 dark:text-slate-400",
+        "caption": "text-sm font-medium text-slate-500 uppercase tracking-wider",
+        "label": "text-xs font-bold uppercase tracking-widest text-slate-400"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#2563EB",
+          "foreground": "#FFFFFF",
+          "hover": "#1D4ED8",
+          "description": "Royal Blue - Used for primary actions, active states, and trust indicators."
+        },
+        "secondary": {
+          "DEFAULT": "#10B981",
+          "foreground": "#FFFFFF",
+          "hover": "#059669",
+          "description": "Emerald - Used for 'Safe' routes, success states, and positive indicators."
+        },
+        "destructive": {
+          "DEFAULT": "#EF4444",
+          "foreground": "#FFFFFF",
+          "hover": "#DC2626",
+          "description": "Red - Reserved strictly for SOS, Danger zones, and Errors."
+        },
+        "warning": {
+          "DEFAULT": "#F59E0B",
+          "foreground": "#FFFFFF",
+          "description": "Amber - Used for caution areas, moderate crowd density."
+        },
+        "background": {
+          "light": "#F8FAFC",
+          "dark": "#0F172A",
+          "glass_light": "rgba(255, 255, 255, 0.85)",
+          "glass_dark": "rgba(15, 23, 42, 0.85)"
+        },
+        "surface": {
+          "light": "#FFFFFF",
+          "dark": "#1E293B"
+        }
+      },
+      "gradients": {
+        "safety_route": "from-emerald-400 to-emerald-600",
+        "danger_zone": "from-red-500/20 to-red-500/5",
+        "sos_active": "animate-pulse from-red-600 to-red-500"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-4 md:p-6 lg:p-8",
+        "section_gap": "gap-6 md:gap-8",
+        "component_gap": "gap-4"
+      },
+      "radius": {
+        "default": "rounded-xl",
+        "button": "rounded-full",
+        "panel": "rounded-2xl"
+      },
+      "shadows": {
+        "floating": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+        "panel": "shadow-lg border border-slate-200/50 dark:border-slate-700/50"
+      },
+      "z_index": {
+        "map": "z-0",
+        "overlay": "z-10",
+        "panel": "z-20",
+        "modal": "z-50",
+        "toast": "z-50"
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border border-white/20 shadow-xl",
+      "map_overlay": "A clean, floating panel style that sits above the map without obscuring it completely.",
+      "micro_interactions": "Buttons scale down slightly on click (active:scale-95). Hover states lift cards (-translate-y-1).",
+      "textures": "Subtle noise texture on solid backgrounds to reduce digital flatness."
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90 h-10 px-4 py-2 rounded-full font-medium transition-all",
+        "ghost": "hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full",
+        "sos": "bg-destructive text-white h-16 w-16 rounded-full shadow-xl animate-pulse font-bold text-xl flex items-center justify-center fixed bottom-8 right-8 z-50 border-4 border-white/20"
+      },
+      "cards": {
+        "base": "bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 p-6",
+        "floating": "backdrop-blur-xl bg-white/90 dark:bg-slate-900/90 rounded-2xl shadow-2xl border border-white/20 p-4"
+      },
+      "inputs": {
+        "search": "h-12 rounded-full border-0 bg-white shadow-lg pl-12 pr-4 text-lg focus:ring-2 focus:ring-primary/50 w-full"
+      }
+    },
+    "assets": {
+      "icons": {
+        "library": "lucide-react",
+        "style": "Stroke width 2px, rounded caps/joins",
+        "usage": "Use Lucide icons for all UI elements. Use MapLibre markers for map elements."
+      },
+      "images": {
+        "companions": [
+          {
+            "url": "https://images.pexels.com/photos/5242792/pexels-photo-5242792.jpeg",
+            "alt": "Group of friends walking safely",
+            "category": "social"
+          },
+          {
+            "url": "https://images.pexels.com/photos/8576222/pexels-photo-8576222.jpeg",
+            "alt": "Students walking together",
+            "category": "social"
+          }
+        ],
+        "safety_context": [
+          {
+            "url": "https://images.pexels.com/photos/35212108/pexels-photo-35212108.jpeg",
+            "alt": "Security camera monitoring",
+            "category": "features"
+          }
+        ]
+      }
+    },
+    "motion": {
+      "transitions": "transition-all duration-300 ease-out",
+      "animation_classes": {
+        "fade_in": "animate-in fade-in duration-500",
+        "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+        "pulse_slow": "animate-pulse duration-[3000ms]"
+      }
+    },
+    "accessibility": {
+      "contrast": "Ensure all text meets WCAG AA (4.5:1). Use dark overlays on map if text is overlaid.",
+      "focus": "Visible focus rings (ring-2 ring-primary ring-offset-2) on all interactive elements.",
+      "screen_readers": "All map markers must have aria-labels. Route instructions must be announced."
+    },
+    "tech_stack_specifics": {
+      "map_library": "MapLibre GL JS",
+      "ui_library": "Shadcn UI (Radix Primitives)",
+      "styling": "Tailwind CSS",
+      "icons": "Lucide React"
+    },
+    "instructions_to_main_agent": [
+      "1. MAP FIRST: The map is the background of the entire app. Do not put the map in a small box. It should be 'absolute inset-0'.",
+      "2. FLOATING UI: Build the 'Route Panel', 'Search Bar', and 'Companion List' as floating elements on top of the map using absolute positioning and z-index.",
+      "3. SAFETY LAYERS: When implementing the 'Safest Route', visualize it with a distinct color (Emerald) compared to the 'Fastest Route' (Blue/Grey).",
+      "4. SOS BUTTON: The SOS button must be always visible, distinct, and accessible (bottom right or fixed header).",
+      "5. DARK MODE: Ensure the map style changes to a dark theme when the app is in dark mode.",
+      "6. DATA-TESTID: Add 'data-testid' to all inputs, buttons, and key containers."
+    ],
+    "universal_guidelines": [
+      "Avoid generic 'Bootstrap' layouts. Use asymmetry and floating elements.",
+      "Do not use 'Inter' for headings. Use 'Outfit'.",
+      "Use 'sonner' for toast notifications.",
+      "Ensure all interactive elements have hover and active states.",
+      "Use 'lucide-react' for icons."
+    ]
+  }
+}
